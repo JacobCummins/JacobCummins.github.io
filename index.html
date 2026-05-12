@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - PhD Researcher</title>
+    <style>
+        /* Modern, clean CSS styling */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #fafafa;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+        }
+
+        .header-text h1 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+        }
+
+        .header-text h2 {
+            margin: 0 0 15px 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #666;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .item-list li {
+            margin-bottom: 25px;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .meta {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .description {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .tags {
+            margin-top: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e1e4e8;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin-right: 10px;
+            margin-top: 8px;
+        }
+
+        .button:hover {
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <!-- Replace src with your image URL, e.g., "profile.jpg" -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+        <div class="header-text">
+            <h1>[Your Name]</h1>
+            <h2>PhD Candidate in [Your Field] at [University Name]</h2>
+            <p>
+                Researching [Brief 1-sentence summary of your PhD topic]. 
+                Proud member of the <a href="[LINK TO LAB]" target="_blank"><strong>[Name of Your Lab]</strong></a>.
+            </p>
+            <p>
+                📍 [City, Country] | ✉️ <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h3>About My Research</h3>
+        <p>
+            Write a short paragraph about your PhD journey. What is the core problem you are solving? What methodologies do you use? This is a great place to give visitors a quick overview of your expertise and academic focus.
+        </p>
+    </section>
+
+    <!-- Publications Section -->
+    <section>
+        <h3>Publications</h3>
+        <ul class="item-list">
+            <li>
+                <div class="title">[Paper Title 1]</div>
+                <div class="meta"><strong>[Your Name]</strong>, [Co-Author 1], [Co-Author 2]</div>
+                <div class="meta"><em>[Name of Journal/Conference]</em>, [Year]</div>
+                <a href="#" class="button">PDF</a>
+                <a href="#" class="button">Code</a>
+            </li>
+            <li>
+                <div class="title">[Paper Title 2]</div>
+                <div class="meta">[Co-Author 1], <strong>[Your Name]</strong></div>
+                <div class="meta"><em>[Name of Journal/Conference]</em>, [Year]</div>
+                <a href="#" class="button">PDF</a>
+                <a href="#" class="button">Project Page</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- GitHub Repositories Section -->
+    <section>
+        <h3>Academic Repositories</h3>
+        <ul class="item-list">
+            <li>
+                <a href="[LINK TO REPO]" class="title">[Repo Name - e.g., Data-Pipeline-2024]</a>
+                <div class="description">Code for the data processing pipeline used in our 2024 conference paper.</div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyTorch</span>
+                </div>
+            </li>
+            <li>
+                <a href="[LINK TO REPO]" class="title">[Repo Name - e.g., My-Algorithms]</a>
+                <div class="description">Implementation of the novel algorithms developed during my second year of research.</div>
+                <div class="tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">CUDA</span>
+                </div>
+            </li>
+        </ul>
+        <p><a href="https://github.com/yourusername" target="_blank">View all my academic code on GitHub &rarr;</a></p>
+    </section>
+
+    <!-- Personal Projects Section -->
+    <section>
+        <h3>Personal Projects</h3>
+        <ul class="item-list">
+            <li>
+                <a href="[LINK TO PROJECT]" class="title">[Project Name]</a>
+                <div class="description">A fun side project where I built a [what it is] to [what it does]. Completely unrelated to my PhD, but built out of curiosity.</div>
+            </li>
+            <li>
+                <a href="[LINK TO PROJECT]" class="title">[Project Name 2]</a>
+                <div class="description">An open-source tool I maintain for the community.</div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer style="margin-top: 50px; text-align: center; color: #888; font-size: 0.9rem; border-top: 1px solid var(--border-color); padding-top: 20px;">
+        <p>&copy; 2026 [Your Name]. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    </footer>
+
+</body>
+</html>
